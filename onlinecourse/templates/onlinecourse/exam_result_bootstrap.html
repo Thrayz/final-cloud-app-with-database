@@ -59,16 +59,14 @@
                                     <!-- selected correctly -->
                                     <p class="alert alert-success">Correctly Selected: {{choice}}></p>
                                 {% else %}
-                                    <!-- should not but selected -->
+                                   
                                     <p class="alert alert-danger">Wrongly Selected: {{choice}}></p>
                                 {% endif %}
                             {% else %}
                                 {% if choice.is_correct %}
-                                    <!-- should but not selected -->
+                                  
                                     <p class="alert alert-warning">Not Selected: {{choice}}></p>
-                                <!-- {% else %} -->
-                                    <!-- unselected correctly -->
-                                    <!-- <p>{{choice}}></p> -->
+                              
                                 {% endif %}
                             {% endif %}
                         {% endfor %}                                            
